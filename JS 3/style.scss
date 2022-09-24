@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    background: linear-gradient(45deg , #320c21, #3e1936, #47284c, #4c3964, #4d4a7c, #525490, #565fa5, #576abb, #6f6dd1, #8e6ce4, #b268f2, #d95ffb);
+    background-size: 400% 400%;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(29, 40, 58);
+    cursor: pointer;
+    transition: .4s;
+    animation: gradient 10s ease infinite;
+    &:hover{
+        font-size: 27px;
+        color: rgb(0, 0, 0);
+        transform: scale(1.01);
+        transition: .5s;
+        border-radius: 10px;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+    }
+}
